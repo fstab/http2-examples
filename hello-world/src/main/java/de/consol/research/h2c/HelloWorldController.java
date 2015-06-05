@@ -18,6 +18,7 @@ public class HelloWorldController {
             n = new AtomicInteger(0);
             request.getSession().setAttribute("n", n);
         }
-        return "Hello, this is request number " + n.incrementAndGet();
+        return "Hello, World!\n" +
+                "Btw, this is request number " + n.incrementAndGet() + ".";
     }
 }
