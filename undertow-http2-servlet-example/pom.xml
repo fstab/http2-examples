@@ -25,10 +25,11 @@
         </dependency>
 
         <dependency>
-        <groupId>org.mortbay.jetty.alpn</groupId>
+            <groupId>org.mortbay.jetty.alpn</groupId>
             <artifactId>alpn-boot</artifactId>
             <version>8.1.2.v20141202</version>
-    </dependency>
+            <scope>runtime</scope>
+        </dependency>
 
     </dependencies>
 
@@ -59,7 +60,8 @@
                         <configuration>
                             <transformers>
                                 <!-- add Main-Class to manifest file -->
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>de.consol.research.h2c.Http2Server</mainClass>
                                 </transformer>
                             </transformers>
