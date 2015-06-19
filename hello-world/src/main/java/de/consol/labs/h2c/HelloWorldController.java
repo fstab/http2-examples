@@ -1,4 +1,4 @@
-package de.consol.research.h2c;
+package de.consol.labs.h2c;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.GET;
