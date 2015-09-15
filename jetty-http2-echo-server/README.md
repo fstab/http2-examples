@@ -10,7 +10,6 @@ Jetty HTTP/2 Server
 3.  Run as follows (replace $ALPN_VERSION with the version found above):
     
     ```bash
-    cd jetty-http2-echo-server
     mvn package
     java -Xbootclasspath/p:alpn-boot-$ALPN_VERSION.jar -jar target/jetty-http2-echo-server.jar
     ```
