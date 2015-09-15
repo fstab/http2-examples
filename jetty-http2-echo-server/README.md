@@ -1,7 +1,7 @@
 Jetty HTTP/2 Server
 -------------------
 
-1.  Find out the correct version of the ALPN library for your JDK here:
+1.  Find out the correct version of the ALPN library for your JDK here (scroll to the table at the bottom of the page):
     
     [http://www.eclipse.org/jetty/documentation/current/alpn-chapter.html](http://www.eclipse.org/jetty/documentation/current/alpn-chapter.html)
 2.  Download the ALPN JAR here (replace $ALPN_VERSION with the version found above):
