@@ -16,9 +16,9 @@ Post something here:
 <script type="text/javascript">
     function post() {
         var xmlhttp=new XMLHttpRequest();
-        xmlhttp.open("POST", "/post-data", true);
+        xmlhttp.open("POST", "/data", true);
         xmlhttp.send(document.querySelector("input[type='text']").value);
-        document.body.innerHTML += '<p/>Data posted. You can access the data on <a href="/post-data">/post-data</a> without sending an additional request.<br/>Hurry up, it only works as long as the HTTP/2 session is open.';
+        document.body.innerHTML += '<p/>Data posted. You can access the data on <a href="/data">/data</a> without sending an additional request.<br/>Hurry up, it only works as long as the HTTP/2 session is open.';
     }
 </script>
 </body>

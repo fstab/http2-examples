@@ -17,11 +17,11 @@ public class PushEchoServlet extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
         switch (request.getMethod()) {
             case "GET":
-                if (request.getServletPath().contains("/post-data")) {
+                if (request.getServletPath().contains("/data")) {
                     // This request does not necessarily come from the client. It may be triggered by the PUSH_PROMISE.
                     // However, when responding it does not make a difference if we respond to a client request or to a push promise.
                     response.setContentType("text/plain");
-                    response.getWriter().write("Post data: " + receivedData);
+                    response.getWriter().write("I received the following data: " + receivedData);
                 } else {
                     showIndexHtml(response);
                 }
@@ -29,6 +29,7 @@ public class PushEchoServlet extends HttpServlet {
             case "POST":
                 handlePost(request, response);
                 push(request);
+                break;
             default:
                 showIndexHtml(response);
         }
@@ -37,7 +38,7 @@ public class PushEchoServlet extends HttpServlet {
     private void handlePost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         receivedData = IOUtils.readLines(request.getReader()).stream().reduce("", (a, b) -> a + " " + b);
         response.setContentType("text/plain");
-        response.getWriter().write("Data received successfully. Retreive data with GET /post-data");
+        response.getWriter().write("Data received successfully. Retrieve data with GET /data");
     }
 
     private void push(HttpServletRequest req) {
@@ -46,7 +47,7 @@ public class PushEchoServlet extends HttpServlet {
             baseRequest
                     .getPushBuilder()
                     .method("GET")
-                    .path("/post-data")
+                    .path("/data")
                     .push();
         }
     }
