@@ -43,7 +43,7 @@ java -Xbootclasspath/p:<path-to-alpn-boot-VERSION.jar> -jar server/target/server
 Run one of the clients:
 
 ```bash
-java -Xbootclasspath/p:<path-to-alpn-boot-VERSION.jar> -jar jetty-client/jetty-client.jar
-java -Xbootclasspath/p:<path-to-alpn-boot-VERSION.jar> -jar netty-client/netty-client.jar
-java -Xbootclasspath/p:<path-to-alpn-boot-VERSION.jar> -jar okhttp-client/okhttp-client.jar
+java -Xbootclasspath/p:<path-to-alpn-boot-VERSION.jar> -jar jetty-client/target/jetty-client.jar
+java -Xbootclasspath/p:<path-to-alpn-boot-VERSION.jar> -jar netty-client/target/netty-client.jar
+java -Xbootclasspath/p:<path-to-alpn-boot-VERSION.jar> -jar okhttp-client/target/okhttp-client.jar
 ```
