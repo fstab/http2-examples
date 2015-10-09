@@ -27,7 +27,7 @@ How to Run
 
 ```java
 git clone https://github.com/fstab/http2-examples.git
-cd multiplexing-examples
+cd http2-examples/multiplexing-examples
 mvn package
 ```
 
