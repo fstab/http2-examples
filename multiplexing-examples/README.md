@@ -1,7 +1,8 @@
 multiplexing-examples
 =====================
 
-These examples demonstrate [HTTP/2 multiplexing](https://httpwg.github.io/specs/rfc7540.html#StreamsLayer),
+This project contains some examples of
+[HTTP/2 multiplexing](https://httpwg.github.io/specs/rfc7540.html#StreamsLayer),
 i.e. HTTP/2's ability to handle multiple requests within one TCP connection
 independent of each other, so a blocked or stalled request or response does
 not prevent progress on other streams.
