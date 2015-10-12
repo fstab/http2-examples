@@ -7,6 +7,8 @@ i.e. HTTP/2's ability to handle multiple requests within one TCP connection
 independent of each other, so a blocked or stalled request or response does
 not prevent progress on other streams.
 
+A blog post on the examples can be found on [http://unrestful.io](http://unrestful.io/2015/10/10/http2-java-client-examples.html).
+
 What does it do?
 ----------------
 
