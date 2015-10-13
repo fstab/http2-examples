@@ -21,7 +21,7 @@ Start the server:
 java -Xbootclasspath/p:<path-to-alpn-boot-VERSION.jar> -jar target/jetty-http2-server-example.jar
 ```
 
-Point your browser to https://localhost:8443
+Point your browser to [https://localhost:8443](https://localhost:8443)
 
 Call using h2c
 --------------
