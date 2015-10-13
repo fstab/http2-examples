@@ -21,10 +21,15 @@ Start the server:
 java -Xbootclasspath/p:<path-to-alpn-boot-VERSION.jar> -jar target/jetty-http2-server-example.jar
 ```
 
+Test using Web Browser
+----------------------
+
 Point your browser to [https://localhost:8443](https://localhost:8443)
 
-Call using h2c
---------------
+Test using `h2c`
+----------------
+
+Download and install the latest `h2c` release from [github.com/fstab/h2c](https://github.com/fstab/h2c/releases).
 
 ```bash
 h2c get https://localhost:8443
