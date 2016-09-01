@@ -24,6 +24,10 @@ The demo is implemented three times using three different HTTP/2 client librarie
   * [netty](http://netty.io/)
   * [OkHttp](http://square.github.io/okhttp/)
 
+Prerequisites
+-------
+Java 8
+
 How to Run
 ----------
 
@@ -34,7 +38,7 @@ mvn package
 ```
 
 In order to run the examples, you need
-[Jetty's ALPN boot JAR](http://unrestful.io/2015/10/09/alpn-java.html).
+[Jetty's ALPN boot JAR](http://unrestful.io/2015/10/09/alpn-java.html).  Make sure to download the corresponding file or else it will not work.
 
 Start the server:
 
