@@ -16,7 +16,7 @@
 
     <properties>
         <main.class>de.consol.labs.h2c.examples.client.jetty.JettyClientExample</main.class>
-        <jetty.version>9.3.4.v20151007</jetty.version>
+        <jetty.version>9.4.30.v20200611</jetty.version>
     </properties>
 
 
